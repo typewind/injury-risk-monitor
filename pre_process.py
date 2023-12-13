@@ -13,10 +13,10 @@ IMBALANCE = 0.1
 
 def task1_clean_data(rtp_theshold=RTP_THRESHOLD, imbalance=IMBALANCE):
 
-    nb = pd.read_excel("./data/Southampton/Task 1 Data.xlsx",
+    nb = pd.read_excel("./data/data.xlsx",
                        sheet_name="Nordboard Data")
     players = pd.read_excel(
-        "./data/Southampton/Task 1 Data.xlsx", sheet_name="Player Data")
+        "./data/data.xlsx", sheet_name="Player Data")
 
     nb = nb.dropna(subset=["Player ID"])
     nb["Player ID"] = nb["Player ID"].astype(int)
@@ -127,8 +127,6 @@ def task1_clean_data(rtp_theshold=RTP_THRESHOLD, imbalance=IMBALANCE):
 
     # calculate pass metrics 
     df_rtp["RTP Level"] = df_rtp[[x + "_comp" for x in to_compare]].sum(axis=1)
-    #df_rtp["RTP Pass"] = df_rtp[[x + "_comp" for x in to_compare]].all(axis=1)
-    # df_rtp.to_csv("../data/Southampton/task1_output.csv", index=False)
 
     return df_rtp
 
@@ -213,12 +211,12 @@ def cal_quantile(df_rtp, player_id):
     return q25, median, q75
 
 def load_comment():
-    return pd.read_csv("./data/Southampton/task1_comment.csv")
+    return pd.read_csv("./data/comment.csv")
 def submit_comment(player_id, test, text, comment_table):
     ts = time.time()
     now = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
     comment_table = comment_table.append({'Player ID': player_id, 'Test':test,
                               'Timestamp':now, 'Comment': text}, ignore_index=True)
-    comment_table.to_csv("./data/Southampton/task1_comment.csv", encoding='utf-8', index=False)
+    comment_table.to_csv("./data/comment.csv", encoding='utf-8', index=False)
     
 

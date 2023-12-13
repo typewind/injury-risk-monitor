@@ -22,8 +22,6 @@ rc('font', **font)
 # Get data
 df1 = task1_clean_data()
 comment_table = load_comment()
-#df1.to_csv("./data/Southampton/task1_output.csv", encoding='utf-8', index=False)
-#st.write(df1)
 
 # dashboard layout config
 st.set_page_config(layout="wide")
