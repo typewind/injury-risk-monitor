@@ -1,0 +1,12 @@
+.venv
+.venv/*
+open-data/*
+*.png
+*.jpg
+img/*
+.DS_Store
+__pycache__*
+*.mpeg
+hudl_video_*
+chromedriver
+
