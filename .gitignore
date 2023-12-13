@@ -1,7 +1,6 @@
 .venv
 .venv/*
 open-data/*
-*.png
 *.jpg
 img/*
 .DS_Store
