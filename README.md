@@ -16,7 +16,7 @@ Ensure you have Python installed on your system. This application requires Pytho
 
 1. **Clone the Repository**
 ```sh
-git clone https://github.com/your-username/nordbord-injury-risk-monitor.git
+git clone https://github.com/typewind/nordbord-injury-risk-monitor.git
 cd nordbord-injury-risk-monitor
 ```
 
