@@ -1,4 +1,4 @@
-# NordBord Injury Risk Monitor
+# Injury Risk Monitor
 
 This dashboard provides a robust and intuitive interface for monitoring and assessing the risk of hamstring strength imbalance in athletes. It is built using Python and Streamlit, offering a user-friendly web application for sports scientists, physiotherapists, and coaches.
 
@@ -16,8 +16,8 @@ Ensure you have Python installed on your system. This application requires Pytho
 
 1. **Clone the Repository**
 ```sh
-git clone https://github.com/typewind/nordbord-injury-risk-monitor.git
-cd nordbord-injury-risk-monitor
+git clone https://github.com/typewind/injury-risk-monitor.git
+cd injury-risk-monitor
 ```
 
 2. **Set Up a Virtual Environment (Optional but recommended)**
